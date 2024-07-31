@@ -1,4 +1,5 @@
 from http_handler import send_http_request
+from html_parser import parse_html
 import sys
 import os
 import tkinter as tk
@@ -87,27 +88,7 @@ def open_page(mime_type, page_contents):
         body = page_contents.split("<body>")[1].split("</body>")[0]
         lines = body.split("\n")
 
-        for line in lines:
-            line = line.strip()
-            
-            if line.startswith("<p>"):
-                text = line.replace("<p>", "").replace("</p>", "")
-                label = tk.Label(html_viewer, text=text, background="#222222", foreground="#cccccc", font=("Consolas", 12))
-                label.pack(anchor="w", padx=10, pady=5)
-            elif line.startswith("<h1>"):
-                text = line.replace("<h1>", "").replace("</h1>", "")
-                label = tk.Label(html_viewer, text=text, background="#222222", foreground="#cccccc", font=("Consolas", 24, "bold"))
-                label.pack(anchor="w", padx=10, pady=10)
-            elif line.startswith("<a href="):
-                href = line.split('"')[1]
-                text = line.split("\">")[1].split("</a>")[0]
-                link = tk.Label(html_viewer, text=text, background="#222222", foreground="blue", font=("Consolas", 12), cursor="hand2")
-                link.pack(anchor="w", padx=10, pady=5)
-                link.bind("<Button-1>", lambda event, href=href: open_url(href))
-            elif line.startswith("<hr />"):
-                line_height = 1
-                line = tk.Label(html_viewer, text="", background="#cccccc", font=("Consolas", 1), width=int(window.winfo_screenwidth()), height=line_height)
-                line.pack(anchor="w", padx=10, pady=5)
+        parse_html(tk, window, html_viewer, lines, open_url)
     else:
         window.title(f"{url_bar_entry.get()} - EchoB")
 
