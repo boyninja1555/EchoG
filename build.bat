@@ -1,3 +1,3 @@
 @echo off
-pyinstaller --name=EchoB --onefile --windowed --icon=res/icon.png --add-data="res;res" main.py
+pyinstaller --name=EchoG --onefile --windowed --icon=res/icon.png --add-data="res;res" main.py
 pause
