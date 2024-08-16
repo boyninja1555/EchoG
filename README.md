@@ -31,7 +31,7 @@ We welcome contributions from the community! Please read our [contributing guide
 
 ## License
 
-EchoG is released under the [Creative Commons Attribution-Commercial-Derivatives 4.0 International License](LICENSE).
+EchoG is released under the [MIT License](LICENSE).
 
 ## Support
 
