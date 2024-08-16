@@ -15,7 +15,7 @@ def parse_html(tk, window, html_viewer, lines, open_url):
                 text = line.replace("<h2>", "").replace("</h2>", "")
                 label = tk.Label(html_viewer, text=text, background="#222222", foreground="#cccccc", font=("Consolas", 24, "bold"))
                 label.pack(anchor="w", padx=10, pady=10)
-            elif line.startswith("<a href="):
+            elif line.startswith("<a"):
                 href = line.split('"')[1]
                 text = line.split("\">")[1].split("</a>")[0]
                 link = tk.Label(html_viewer, text=text, background="#222222", foreground="blue", font=("Consolas", 16), cursor="hand2")
