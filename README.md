@@ -17,17 +17,17 @@ Welcome to the EchoG GitHub repository! EchoG is a cutting-edge web browser that
 ## Getting Started
 
 ### Download EchoG
-Visit our [releases](https://github.com/boyninja1555/EchoG/releases) page to download the latest version of EchoG.
+Visit my [releases](https://github.com/boyninja1555/EchoG/releases) page to download the latest version of EchoG.
 
 ### Upload Your Website
-Send your website files to [flappyfloorg@gmail.com](mailto:flappyfloorg@gmail.com) to start hosting your website for free.
+Send your website files to [me](mailto:flappyfloorg@gmail.com) to start hosting your website for free.
 
 ### Explore EchoG Web
 Try out the new EBW links and explore content specifically designed for EchoG users.
 
 ## Contributing
 
-We welcome contributions from the community! Please read our [contributing guidelines](CONTRIBUTING.md) to get started.
+I welcome contributions from the community! Please read my [contributing guidelines](CONTRIBUTING.md) to get started.
 
 ## License
 
@@ -35,6 +35,6 @@ EchoG is released under the [MIT License](LICENSE).
 
 ## Support
 
-If you have any questions or need support, please contact our support team at [flappyfloorg@gmail.com](mailto:flappyfloorg@gmail.com).
+If you have any questions or need support, please contact [me](mailto:flappyfloorg@gmail.com).
 
-We are excited to bring you EchoG and look forward to your feedback. Happy browsing!
+I am excited to bring you EchoG and look forward to your feedback. Happy browsing!
