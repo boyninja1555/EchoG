@@ -14,9 +14,11 @@ def send_http_request(protocol: str, url: str, subpath: str):
         custom_user_agent = f"{config.NAME}/{config.VERSION} ({system_info})"
 
         client = http.client.HTTPConnection("104.190.162.141", 1010)
-        client.request("GET", f"/{url}/{subpath or ""}", headers={"User-Agent": custom_user_agent})
+        client.request(
+            "GET", f"/{url}/{subpath or ""}", headers={"User-Agent": custom_user_agent}
+        )
         response = client.getresponse()
 
-        return { "status": response.status, "body": response.read().decode() }
+        return {"status": response.status, "body": response.read().decode()}
     else:
-        return { "status": 400, "body": "Invalid protocol" }
+        return {"status": 400, "body": "Invalid protocol"}
